@@ -3,7 +3,7 @@
     "url": "http://ftp.vim.org/ftp/os/Linux/distr/porteus/x86_64/current/Porteus-OPENBOX-v5.01-x86_64.iso"
   },
   "linpack": {
-    "url": "https://downloadmirror.intel.com/825890/l_onemklbench_p_2024.2.0_527.tgz"
+    "url": "https://downloadmirror.intel.com/819583/l_onemklbench_p_2024.1.0_517.tgz"
   },
   "prime95": {
     "url": "https://www.mersenne.org/download/software/v30/30.19/p95v3019b20.linux64.tar.gz"
