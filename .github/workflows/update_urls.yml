@@ -1,0 +1,46 @@
+name: Update URLs
+run-name: Update URLs
+
+on:
+  workflow_dispatch:
+
+  # weekly workflow runs
+  schedule:
+    - cron: "0 0 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  update_urls:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: "updateURLs"
+
+      - name: Install dependencies
+        run: |
+          cd updateURLs
+          npm ci
+
+      - name: Check for URL updates
+        id: update-urls
+        run: |
+          cd updateURLs
+          node updateURLs.js
+
+      - name: Update urls.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: ${{ steps.update-urls.outputs.COMMIT_MESSAGE }}
+          file_pattern: urls.json

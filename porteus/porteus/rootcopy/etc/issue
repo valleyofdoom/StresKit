@@ -1,0 +1,34 @@
+
+[1;92m===============================================================================[0;39m
+[1;92m Welcome to StresKit                                                           [0;39m
+[1;92m===============================================================================[0;39m
+
+[1;29mCommands overview:[0;29m
+
+  Visit [1;29mhttps://github.com/valleyofdoom/StresKit[0;29m for a full overview.
+
+  skhelp ............. to display this pre-login message.
+  Ctrl+Alt+F# ........ to switch to a different TTY (e.g. Ctrl+Alt+F2 for TTY 2).
+  watch sensors ...... to display and refresh sensor information.
+  linpack.sh ......... to run Linpack. -m <gb> and -s <samples> are optional.
+  mprime ............. to run Prime95.
+  y-cruncher ......... to run y-cruncher.
+  mlc ................ to run Intel Memory Latency Checker.
+  stressapptest ...... to run stressapptest (GSAT).
+  s-tui .............. to run s-tui.
+  FIRESTARTER ........ to run firestarter.
+
+[1;29mOther commands you may find useful:[0;29m
+
+  poweroff ...... to shutdown.
+  reboot ........ to reboot.
+
+[1;29mLogin:[0;29m
+
+  Login as [1;29mguest[0;29m with password [1;29mguest[0;29m (RECOMMENDED).
+
+    OR
+
+  Login as [1;29mroot[0;29m with password [1;29mtoor[0;29m (NOT RECOMMENDED).
+
+[1;92m===============================================================================[0;39m

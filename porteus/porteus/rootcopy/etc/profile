@@ -1,0 +1,11 @@
+# prevent permission errors
+chmod -R +x /usr/local/tools
+
+# add tools to path
+export PATH="$PATH:/usr/local/tools"
+export PATH="$PATH:/usr/local/tools/linpack"
+export PATH="$PATH:/usr/local/tools/prime95"
+export PATH="$PATH:/usr/local/tools/ycruncher"
+
+# create alias to display help message
+alias skhelp='cat /etc/issue'

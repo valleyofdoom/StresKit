@@ -1,0 +1,16 @@
+{
+  "name": "streskit",
+  "private": "true",
+  "type": "module",
+  "main": "updateURLs.js",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "jsdom": "^24.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1"
+  }
+}
