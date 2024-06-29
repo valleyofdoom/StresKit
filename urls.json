@@ -6,7 +6,7 @@
     "url": "https://downloadmirror.intel.com/825890/l_onemklbench_p_2024.2.0_527.tgz"
   },
   "prime95": {
-    "url": "https://www.mersenne.org/download/software/v30/30.19/p95v3019b14.linux64.tar.gz"
+    "url": "https://www.mersenne.org/download/software/v30/30.19/p95v3019b20.linux64.tar.gz"
   },
   "y-cruncher": {
     "url": "https://github.com/Mysticial/y-cruncher/releases/download/v0.8.4.9538a/y-cruncher.v0.8.4.9538-static.tar.xz"
@@ -21,6 +21,6 @@
     "url": "https://github.com/amanusk/s-tui/archive/refs/heads/master.zip"
   },
   "firestarter": {
-    "url": "https://github.com/tud-zih-energy/FIRESTARTER/releases/download/v2.1/FIRESTARTER_2.1.tar.gz"
+    "url": "https://github.com/tud-zih-energy/FIRESTARTER/releases/download/v2.1.1/FIRESTARTER_2.1.1.tar.gz"
   }
 }
