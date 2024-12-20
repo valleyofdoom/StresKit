@@ -8,7 +8,7 @@ let commitMessage = "";
 async function checkPorteus() {
   try {
     const href =
-      "http://ftp.vim.org/ftp/os/Linux/distr/porteus/x86_64/current/";
+      "https://ftp.nluug.nl/os/Linux/distr/porteus/x86_64/current/";
 
     const response = await fetch(href);
 
