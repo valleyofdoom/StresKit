@@ -191,8 +191,8 @@ def main() -> int:
         os.path.join(tools_folder, "linpack"),
     )
 
-    if patch_linpack(os.path.join(tools_folder, "linpack", "xlinpack_xeon64")) != 0:
-        return 1
+    # if patch_linpack(os.path.join(tools_folder, "linpack", "xlinpack_xeon64")) != 0:
+    #     return 1
 
     # =============
     # Setup Prime95

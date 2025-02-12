@@ -114,8 +114,6 @@ You can ``ls`` each of them to identify which is the desired storage device if t
 
 ### [Linpack](https://en.wikipedia.org/wiki/LINPACK_benchmarks)
 
-Linpack is a stress-test based on the [Intel Math Kernel Library](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html#gs.4kgof5) which solves a dense system of linear equations. The binary has been openly patched to run on AMD CPUs.
-
 Usage:
 
 ```
