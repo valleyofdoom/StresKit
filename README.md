@@ -173,7 +173,7 @@ FIRESTARTER
 
 ## Building
 
-The ``build.py`` script can be used to build the ISO. It is designed to run on [ubuntu-latest](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners) for GitHub actions, but you can use a Linux distro of your choice.
+The ``build.py`` script can be used to build the ISO. It is designed to run on [ubuntu-22.04](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#choosing-github-hosted-runners) for GitHub actions, but you can use a Linux distro of your choice.
 
 ```bash
 git clone https://github.com/valleyofdoom/StresKit.git
