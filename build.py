@@ -49,9 +49,7 @@ def patch_linpack(bin_path: str) -> int:
 
     # the implementation of this may need to change if more patching is required in the future
     matches = [
-        (match.start(), match.group())
-        for match in re.finditer("e8f230", file_hex_string)
-        if match.start() % 2 == 0
+        (match.start(), match.group()) for match in re.finditer("e8f230", file_hex_string) if match.start() % 2 == 0
     ]
 
     LOG_CLI.debug("matches: %i", len(matches))
@@ -103,9 +101,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
-    logging.basicConfig(
-        format="[%(name)s] %(levelname)s: %(message)s", level=logging.INFO
-    )
+    logging.basicConfig(format="[%(name)s] %(levelname)s: %(message)s", level=logging.INFO)
 
     args = parse_args()
 
@@ -168,9 +164,7 @@ def main() -> int:
     LOG_CLI.info("merging custom files with extracted ISO")
     shutil.copytree("porteus", iso_contents, dirs_exist_ok=True)
 
-    tools_folder = os.path.join(
-        iso_contents, "porteus", "rootcopy", "usr", "local", "tools"
-    )
+    tools_folder = os.path.join(iso_contents, "porteus", "rootcopy", "usr", "local", "tools")
     LOG_CLI.debug("tools folder: %s", tools_folder)
 
     # =============
@@ -313,9 +307,7 @@ def main() -> int:
         LOG_CLI.exception("failed to run make %s", e)
         return 1
 
-    shutil.move(
-        os.path.join(stressapptest_master, "src", "stressapptest"), tools_folder
-    )
+    shutil.move(os.path.join(stressapptest_master, "src", "stressapptest"), tools_folder)
 
     # ===========
     # Setup s-tui
