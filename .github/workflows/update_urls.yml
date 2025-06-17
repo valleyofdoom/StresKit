@@ -40,7 +40,7 @@ jobs:
           node updateURLs.js
 
       - name: Update urls.json
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: ${{ steps.update-urls.outputs.COMMIT_MESSAGE }}
           file_pattern: urls.json
