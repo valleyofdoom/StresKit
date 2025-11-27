@@ -49,6 +49,7 @@ async function checkPrime95() {
     let html = await response.text();
     let { window } = new JSDOM(html);
 
+    let length = 2;
     let majorVersion = 0;
 
     for (const element of window.document.getElementsByTagName("a")) {
@@ -57,13 +58,14 @@ async function checkPrime95() {
       );
 
       if (match) {
+        length = match[1].length;
         majorVersion = Math.max(majorVersion, parseInt(match[1], 10));
       }
     }
 
-    href = `${href}v${majorVersion}/`;
+    majorVersion = majorVersion.toString().padStart(length, "0");
 
-    majorVersion = majorVersion.toString().padStart(2, "0");
+    href = `${href}v${majorVersion}/`;
 
     await new Promise((r) => {
       setTimeout(r, 100);
@@ -86,13 +88,14 @@ async function checkPrime95() {
       );
 
       if (match) {
+        length = match[1].length;
         minorVersion = Math.max(minorVersion, parseInt(match[1], 10));
       }
     }
 
-    href = `${href}${majorVersion}.${minorVersion}/`;
+    minorVersion = minorVersion.toString().padStart(length, "0");
 
-    minorVersion = minorVersion.toString().padStart(2, "0");
+    href = `${href}${majorVersion}.${minorVersion}/`;
 
     await new Promise((r) => {
       setTimeout(r, 100);
@@ -119,9 +122,10 @@ async function checkPrime95() {
       );
 
       if (match) {
+        length = match[1].length;
         patchVersion = Math.max(patchVersion, parseInt(match[1], 10))
           .toString()
-          .padStart(2, "0");
+          .padStart(length, "0");
       }
     }
 
