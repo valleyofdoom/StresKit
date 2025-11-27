@@ -7,7 +7,7 @@ Lightweight bootable ISO based on [Porteus](https://www.porteus.org) containing 
 ## Setup
 
 1. Download the latest [StresKit](https://github.com/valleyofdoom/StresKit/releases) ISO and burn it to a USB with [Rufus](https://rufus.ie/en) then boot to it through UEFI. [Ventoy](https://www.ventoy.net/en/index.html) (use grub2 mode if normal mode doesn't work) is another popular option
-2. The login username is ``guest`` and the password is ``guest``
+2. The login username is ``root`` and the password is ``toor``
 3. After logging in, you can use the tools packaged in StresKit. See the [Usage](#usage) section for the available tools
 
 ## Usage
