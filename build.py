@@ -323,6 +323,15 @@ def main() -> int:
 
     try:
         subprocess.run(
+            ["pip", "install", "psutil", "urwid"],
+            check=True,
+        )
+    except subprocess.CalledProcessError as e:
+        LOG_CLI.exception("failed to install s-tui dependencies %s", e)
+        return 1
+
+    try:
+        subprocess.run(
             ["7z", "x", stui_zip, f"-o{stui_contents}"],
             check=True,
         )
