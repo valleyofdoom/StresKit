@@ -6,7 +6,7 @@
     "url": "https://downloadmirror.intel.com/868057/l_onemklbench_p_2025.3.0_422.tgz"
   },
   "prime95": {
-    "url": "https://www.mersenne.org/download/software/v31/31.0/p95v3100b05.linux64.tar.gz"
+    "url": "https://www.mersenne.org/download/software/v31/31.01/p95v3101b02.linux64.tar.gz"
   },
   "y-cruncher": {
     "url": "https://github.com/Mysticial/y-cruncher/releases/download/v0.8.7.9547/y-cruncher.v0.8.7.9547-static.tar.xz"
