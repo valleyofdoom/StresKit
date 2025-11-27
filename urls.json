@@ -3,7 +3,7 @@
     "url": "https://ftp.nluug.nl/os/Linux/distr/porteus/x86_64/current/Porteus-OPENBOX-v5.01-x86_64.iso"
   },
   "linpack": {
-    "url": "https://downloadmirror.intel.com/837792/l_onemklbench_p_2025.0.0_777.tgz"
+    "url": "https://downloadmirror.intel.com/868057/l_onemklbench_p_2025.3.0_422.tgz"
   },
   "prime95": {
     "url": "https://www.mersenne.org/download/software/v31/31.0/p95v3100b05.linux64.tar.gz"
@@ -12,7 +12,7 @@
     "url": "https://github.com/Mysticial/y-cruncher/releases/download/v0.8.6.9545/y-cruncher.v0.8.6.9545-static.tar.xz"
   },
   "imlc": {
-    "url": "https://downloadmirror.intel.com/793041/mlc_v3.11.tgz"
+    "url": "https://downloadmirror.intel.com/866182/mlc_v3.12.tgz"
   },
   "stressapptest": {
     "url": "https://github.com/stressapptest/stressapptest/archive/refs/heads/master.zip"
