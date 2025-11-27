@@ -63,6 +63,8 @@ async function checkPrime95() {
 
     href = `${href}v${majorVersion}/`;
 
+    majorVersion = majorVersion.toString().padStart(2, "0");
+
     await new Promise((r) => {
       setTimeout(r, 100);
     });
@@ -90,6 +92,8 @@ async function checkPrime95() {
 
     href = `${href}${majorVersion}.${minorVersion}/`;
 
+    minorVersion = minorVersion.toString().padStart(2, "0");
+
     await new Promise((r) => {
       setTimeout(r, 100);
     });
@@ -115,7 +119,9 @@ async function checkPrime95() {
       );
 
       if (match) {
-        patchVersion = Math.max(patchVersion, parseInt(match[1], 10));
+        patchVersion = Math.max(patchVersion, parseInt(match[1], 10))
+          .toString()
+          .padStart(2, "0");
       }
     }
 
