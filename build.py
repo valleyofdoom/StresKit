@@ -144,10 +144,6 @@ def main() -> int:
                 "7z",
                 "x",
                 porteus_iso,
-                # don't extract unnecessary files
-                "-x!porteus/base/002-xorg.xzm",
-                "-x!porteus/base/002-xtra.xzm",
-                "-x!porteus/base/003-openbox.xzm",
                 f"-o{iso_contents}",
             ],
             check=True,
